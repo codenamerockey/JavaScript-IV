@@ -25,7 +25,7 @@ class Instructor extends Person {
   }
 
   grade(student, subject) {
-    console.log(`${student} receives a perfect score on ${subject}`);
+    console.log(`${student.name} receives a perfect score on ${subject}`);
   }
 }
 
@@ -131,7 +131,7 @@ const projectManagerTwo = new ProjectManager({
 });
 
 instructorOne.demo('HTML');
-instructorOne.grade('Malcom', 'JavaScript');
+instructorOne.grade(studentOne, 'JavaScript');
 
 studentOne.listsSubjects();
 studentOne.PRAssignment('Javascript');
